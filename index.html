@@ -16,8 +16,8 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: { 800: '#0B192C', 900: '#030712' },
-                        emerald: { 500: '#00A86B', 600: '#008F5B' }
+                        navy: { 800: '#0F172A', 900: '#020617' },
+                        emerald: { 500: '#10B981', 600: '#059669' }
                     },
                     fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }
                 }
@@ -28,27 +28,25 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <!-- Navegación Superior -->
-    <nav class="fixed top-0 w-full bg-navy-800/98 backdrop-blur-md text-white z-50 border-b border-slate-800 shadow-xl">
+    <nav class="fixed top-0 w-full bg-navy-800/98 backdrop-blur-md text-white z-50 border-b border-slate-800 shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 h-24 flex justify-between items-center">
             
-            <!-- Logo Integrado -->
+            <!-- Logo Opción 1: Escudo Geométrico en Español -->
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-12 h-12 bg-gradient-to-br from-navy-800 to-slate-900 border border-emerald-500/40 rounded-xl flex items-center justify-center p-1.5 shadow-lg group-hover:border-emerald-400 transition">
-                    <!-- Shield SVG Logo -->
-                    <svg viewBox="0 0 100 120" class="w-full h-full text-emerald-400 fill-current">
-                        <path d="M50 5 L90 25 V60 C90 85 50 115 50 115 C50 115 10 85 10 60 V25 Z" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round"/>
-                        <text x="50" y="55" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="28" text-anchor="middle" fill="#FFFFFF">AyC</text>
-                        <path d="M25 70 L50 85 L75 70" fill="none" stroke="#00A86B" stroke-width="6" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-extrabold text-base sm:text-lg leading-tight tracking-tight text-white group-hover:text-emerald-400 transition">
-                        Asesorías y Consultorías Integrales de Occidente S.A.S.
-                    </span>
-                    <span class="text-[11px] text-emerald-400 font-semibold tracking-wider uppercase">
-                        Auditoría Interna • Riesgos • Cumplimiento
-                    </span>
-                </div>
+                <svg viewBox="0 0 380 95" class="h-12 w-auto" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Escudo Geométrico -->
+                    <g transform="translate(5, 2)">
+                        <path d="M38 0 L76 18 V48 C76 72 38 92 38 92 C38 92 0 72 0 48 V18 Z" fill="#0F172A" stroke="#10B981" stroke-width="3.5" stroke-linejoin="round"/>
+                        <path d="M38 8 L68 22 V46 C68 65 38 82 38 82 C38 82 8 65 8 46 V22 Z" fill="none" stroke="#0284C7" stroke-width="1.5" opacity="0.5"/>
+                        <text x="38" y="54" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="25" text-anchor="middle" fill="#FFFFFF" letter-spacing="-0.5">AyC</text>
+                    </g>
+                    <!-- Tipografía Corporativa Completa en Español -->
+                    <g transform="translate(90, 16)">
+                        <text x="0" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="16" fill="#FFFFFF">Asesorías y Consultorías</text>
+                        <text x="0" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#10B981">Integrales de Occidente S.A.S.</text>
+                        <text x="0" y="54" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="9" fill="#94A3B8" letter-spacing="1.2">AUDITORÍA • RIESGOS • CUMPLIMIENTO</text>
+                    </g>
+                </svg>
             </a>
 
             <!-- Menú de Navegación -->
@@ -199,7 +197,7 @@
                     </div>
                 </div>
 
-                <!-- Servicio 3 (Imagen Corregida: Papeles de trabajo / Auditoría documental) -->
+                <!-- Servicio 3 -->
                 <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition group">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="Diagnóstico del SCI y Papeles de Trabajo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -457,10 +455,22 @@
 
     <!-- Pie de Página -->
     <footer class="bg-navy-900 py-10 text-center text-xs text-slate-400 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 space-y-3">
-            <p class="font-semibold text-slate-200">Asesorías y Consultorías Integrales de Occidente S.A.S. | NIT: 901420476-2</p>
-            <p>Servicios de Auditoría Gerencial, Informática, Administración de Riesgo, ISO 9001 y Control Interno.</p>
-            <p class="text-slate-500 pt-2">Cali - Valle del Cauca, Colombia © Todos los derechos reservados.</p>
+        <div class="max-w-7xl mx-auto px-6 space-y-4">
+            <div class="flex justify-center">
+                <svg viewBox="0 0 380 95" class="h-10 w-auto" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(5, 2)">
+                        <path d="M38 0 L76 18 V48 C76 72 38 92 38 92 C38 92 0 72 0 48 V18 Z" fill="#0F172A" stroke="#10B981" stroke-width="3.5" stroke-linejoin="round"/>
+                        <text x="38" y="54" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="25" text-anchor="middle" fill="#FFFFFF">AyC</text>
+                    </g>
+                    <g transform="translate(90, 16)">
+                        <text x="0" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="16" fill="#FFFFFF">Asesorías y Consultorías</text>
+                        <text x="0" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#10B981">Integrales de Occidente S.A.S.</text>
+                        <text x="0" y="54" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="9" fill="#94A3B8" letter-spacing="1.2">AUDITORÍA • RIESGOS • CUMPLIMIENTO</text>
+                    </g>
+                </svg>
+            </div>
+            <p class="font-semibold text-slate-200">NIT: 901420476-2 | Cali - Valle del Cauca, Colombia</p>
+            <p class="text-slate-500">Servicios de Auditoría Gerencial, Informática, Administración de Riesgo, ISO 9001 y Control Interno.</p>
         </div>
     </footer>
 
